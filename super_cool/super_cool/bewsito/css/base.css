@@ -1,0 +1,6 @@
+body {
+    background:
+    -webkit-linear-gradient(left,rgba(240,255,255,1.0),
+    rgba(0,0,0,0.0)),url("/images/background.jpg") center top no-repeat;
+    -webkit-background-size: cover;
+}

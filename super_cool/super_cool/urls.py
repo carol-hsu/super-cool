@@ -14,19 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from django.contrib import admin
 import super_cool.bewsito.views as view
+from config import ApplicationConfig
 import django
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
     url(r'^bewsito/', view.mainpage),
     url(r'^js/(?P<path>.*)$', django.views.static.serve,
-        {'document_root': 'js/'}, name='JS'),
+        {'document_root': ApplicationConfig.get_source('js')}, name='JS'),
 
     url(r'^css/(?P<path>.*)$', django.views.static.serve,
-        {'document_root': 'css/'}, name='CSS'),
+        {'document_root': ApplicationConfig.get_source('css')}, name='CSS'),
 
     url(r'^images/(?P<path>.*)$', django.views.static.serve,
-        {'document_root': '/Users/nosus/workstation/otis-web/super_cool/super_cool/images/'}, name='IMG'),
+        {'document_root': ApplicationConfig.get_source('image')}, name='IMG'),
 ]
