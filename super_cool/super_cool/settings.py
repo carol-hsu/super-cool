@@ -55,6 +55,7 @@ ROOT_URLCONF = 'super_cool.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        #TODO:change by config file
         'DIRS': ['/Users/nosus/workstation/otis-web/super_cool/super_cool/html'],
         'APP_DIRS': True,
         'OPTIONS': {
