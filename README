@@ -1,0 +1,9 @@
+0. install python, pip and django
+   - brew install python
+   - wget https://bootstrap.pypa.io/get-pip.py; python get-pip.py
+   - pip install django
+
+1. for execute website
+   - modify config/location.ini for the path of directory 
+   - python manage.py runserver
+
