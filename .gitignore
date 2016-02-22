@@ -2,8 +2,10 @@
 __pycache__/
 *.py[cod]
 
-# bewsito images
+# bewsito stuff
 images/
+location.ini
+
 # C extensions
 *.so
 

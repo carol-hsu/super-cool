@@ -1,6 +1,32 @@
-body {
+.firstblock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background:
     -webkit-linear-gradient(left,rgba(240,255,255,1.0),rgba(0,0,0,0.0)),
     url("/images/background.jpg") center top no-repeat;
     -webkit-background-size: cover;
 }
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 50%;
+    margin-left: -220px;
+}
+
+.secondblock {
+    position: absolute;
+    top: -100%
+    width: 100%;
+    height: 100%;
+    background:
+    -webkit-linear-gradient(left,rgba(240,255,255,1.0),rgba(0,0,0,0.0)),
+    url("/images/background.jpg") center top no-repeat;
+    -webkit-background-size: cover;
+}
+
+/* global style*/
+
